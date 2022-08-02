@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// view直接呼び出し設定
+Route::view('/login', '/login/index') -> name('login');
+
 Route::get('/', function () {
     return view('welcome');
 });
