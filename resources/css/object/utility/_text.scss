@@ -1,0 +1,16 @@
+@charset "utf-8";
+@use '../../foundation' as f;
+/* text
+----------------------------------------------------------------- */
+.u-text {
+	// 白
+	&-color {
+		color: f.$color-white; // #fff
+	}
+	&-fontBold {
+		font-weight: bold;
+	}
+	&-fontNotoSerif {
+		font-family: 'Noto Serif JP', sans-serif;
+	}
+}

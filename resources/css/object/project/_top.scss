@@ -1,0 +1,31 @@
+@charset "utf-8";
+@use '../../foundation' as f;
+.p-topHero {
+	width: 100%;
+	&_block {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-image: url('../img/top/hero-bg.webp');
+		@media #{f.$pointM} {
+			background-image: url('../img/top/hero-bg-tab.webp');
+		}
+		@media #{f.$pointS} {
+			background-image: url('../img/top/hero-bg-sp.webp');
+		}
+	}
+	&_inner {
+		margin: 0 auto;
+		max-width: 1450px;
+		min-height: 950px;
+		position: relative;
+		padding: 210px 5px 0;
+		@media #{f.$point2L} {
+			min-height: f.get_vw(950, f.$vw2Lg);
+			padding: f.get_vw(210, f.$vw2Lg) 10px 0;
+		}
+	}
+	&hoge {
+		font-weight: bold;
+	}
+}

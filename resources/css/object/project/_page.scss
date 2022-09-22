@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* page
+----------------------------------------------------------------- */
+.p-page {
+	width: 100%;
+	&_block {
+		// min-height: 600px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-image: url('../img/page-bg.webp');
+		@media #{$point2L} {
+			// min-height: get_vw(600, $vw2Lg);
+		}
+		@media #{$pointL} {
+			// min-height: get_vw(600, $vwLg);
+		}
+		@media #{$pointM} {
+			// min-height: get_vw(550, $vwMd);
+			background-image: url('../img/page-bg-tab.webp');
+		}
+		@media #{$pointS} {
+			background-image: url('../img/page-bg-sp.webp');
+			// min-height: get_vw(500);
+		}
+	}
+	&_blockInner {
+		margin: 0 auto;
+		max-width: 1450px;
+		position: relative;
+		padding: 190px 5px 150px;
+		@media #{$point2L} {
+			padding: get_vw(190, $vw2Lg) 10px get_vw(150, $vw2Lg);
+		}
+		@media #{$pointL} {
+			padding: get_vw(190, $vwLg) 10px get_vw(150, $vwLg);
+		}
+		@media #{$pointM} {
+			padding: get_vw(150, $vwMd) 10px get_vw(100, $vwMd);
+		}
+		@media #{$pointS} {
+			padding: get_vw(95) 10px get_vw(15);
+		}
+	}
+	&_blockBody {
+		z-index: 2;
+		position: relative;
+	}
+	&_hero {
+		bottom: 0;
+		right: 5px;
+		z-index: 2;
+		width: 654px;
+		position: absolute;
+		@media #{$point2L} {
+			right: 5px;
+			width: get_vw(654, $vw2Lg);
+		}
+		@media #{$pointL} {
+			width: get_vw(654, $vwLg);
+		}
+		@media #{$pointM} {
+			width: get_vw(450, $vwMd);
+		}
+		@media #{$pointS} {
+			width: 70%;
+			position: relative;
+			margin: get_vw(30) auto 0;
+		}
+		&-bundle {
+			width: 556px;
+			@media #{$point2L} {
+				width: get_vw(556, $vw2Lg);
+			}
+			@media #{$pointL} {
+				width: get_vw(460, $vwLg);
+			}
+			@media #{$pointM} {
+				width: get_vw(340, $vwMd);
+			}
+			@media #{$pointS} {
+				width: 70%;
+			}
+		}
+	}
+	&_img {
+		z-index: 1;
+		width: 324px;
+		position: relative;
+		@media #{$point2L} {
+			width: get_vw(324, $vw2Lg);
+		}
+		@media #{$pointL} {
+			width: get_vw(324, $vwLg);
+		}
+		@media #{$pointM} {
+			width: get_vw(250, $vwMd);
+		}
+		@media #{$pointS} {
+			width: get_vw(160,);
+		}
+	}
+	&_line {
+		width: 100%;
+		position: relative;
+		&::before,
+		&::after {
+			z-index: 0;
+			content: '';
+			display: block;
+			position: absolute;
+		}
+		&::before {
+			top: 0;
+			left: 0;
+			width: 66%;
+			height: 85%;
+			border-radius: 0 200px 200px 0;
+			background: linear-gradient(to bottom, $color-blue12 25%, $color-blue13 60%);
+			@media #{$pointM} {
+				border-radius: 0 100px 100px 0;
+			}
+			@media #{$pointS} {
+				width: 80%;
+				height: 85%;
+			}
+		}
+		&::after {
+			top: -50%;
+			right: 0;
+			width: 53%;
+			height: 90%;
+			border-radius: 200px 0 0 200px;
+			background-color: $color-white;
+			@media #{$point2L} {
+			}
+			@media #{$pointL} {
+				width: 63%;
+			}
+			@media #{$pointM} {
+				border-radius: 100px 0 0 100px;
+			}
+			@media #{$pointS} {
+				z-index: 1;
+				width: 95%;
+				height: 85%;
+			}
+		}
+	}
+	&_lineInner {
+		margin: 0 auto;
+		max-width: 1450px;
+		padding: 20px 5px 0;
+		@media #{$point2L} {
+			padding: get_vw(20, $vw2Lg) 10px 0;
+		}
+		@media #{$pointL} {
+			padding: get_vw(20, $vwLg) 10px 0;
+		}
+		@media #{$pointM} {
+			padding: get_vw(20, $vwMd) 10px 0;
+		}
+		@media #{$pointS} {
+			padding: get_vw(20) 10px 0;
+		}
+	}
+}

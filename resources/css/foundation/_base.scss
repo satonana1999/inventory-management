@@ -1,0 +1,40 @@
+@charset "utf-8";
+@use 'definition' as f;
+@use 'inc' as i;
+/* base
+----------------------------------------------------------------- */
+img {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	vertical-align: bottom;
+}
+.cf::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+input::placeholder,textarea::placeholder {
+  color: #aaa;
+}
+select:invalid {
+  color: #aaa;
+}
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+/* iOSのアドレスバーによるacメニューの挙動を修正するための記述 */
+@supports (-webkit-touch-callout: none) {
+	html {
+		min-height: 100vh;
+		height: -webkit-fill-available;
+	}
+	body {
+		min-height: 100vh;
+		min-height: -webkit-fill-available;
+	}
+}
+/* iOSでのinputのスタイルをリセット */
+input[type="submit"]{
+	-webkit-appearance: none;
+}

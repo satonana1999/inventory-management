@@ -1,0 +1,131 @@
+@charset "utf-8";
+@use '../../foundation' as f;
+/* display
+---------------------------------------------------------------- */
+.u-display {
+	&-block {
+		display: block;
+	}
+	&-blockTab {
+		@media #{f.$pointM} {
+			display: block;
+		}
+	}
+	&-block {
+		@media #{f.$pointS} {
+			display: block;
+		}
+	}
+	&-inline {
+		display: inline;
+	}
+	&-inlineTab {
+		@media #{f.$pointM} {
+			display: inline;
+		}
+	}
+	&-inlineSp {
+		@media #{f.$pointS} {
+			display: inline;
+		}
+	}
+	&-inlineBlock {
+		display: inline-block;
+	}
+	&-none {
+		display: none;
+	}
+	&-noneTabBlock {
+		display: none;
+		@media #{f.$pointM} {
+			display: block;
+		}
+	}
+	&-noneTabBlockSpNone {
+		display: none;
+		@media #{f.$pointM} {
+			display: block;
+		}
+		@media #{f.$pointS} {
+			display: none;
+		}
+	}
+	&-tabNone {
+		@media #{f.$pointM} {
+			display: none;
+		}
+	}
+	&-tabNoneSpBlock {
+		@media #{f.$pointM} {
+			display: none;
+		}
+		@media #{f.$pointS} {
+			display: block;
+		}
+	}
+	&-spNone {
+		@media #{f.$pointS} {
+			display: none;
+		}
+	}
+	&-noneSpBlock {
+		display: none;
+		@media #{f.$pointS} {
+			display: block;
+		}
+	}
+}
+
+.u-flex {
+	display: flex;
+	&-wrap {
+		flex-wrap: wrap;
+	}
+	&-wrapBetween {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&-jcSpaceBetween {
+		justify-content: space-between;
+	}
+	&-spBlock {
+		display: flex;
+		@media #{f.$pointS} {
+			display: block;
+		}
+	}
+	&-center {
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.u-show {
+	&-tab {
+		@media #{f.$pointM} {
+			display: block;
+		}
+	}
+	&-sp {
+		@media #{f.$pointS} {
+			display: block;
+		}
+	}
+}
+
+.u-hide {
+	&-tab {
+		@media #{f.$pointM} {
+			display: none;
+		}
+	}
+	&-sp {
+		@media #{f.$pointS} {
+			display: none;
+		}
+	}
+}
+
+.u-widthMin {
+	min-width: f.$width;
+}

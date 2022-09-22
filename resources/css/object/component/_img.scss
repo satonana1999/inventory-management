@@ -1,0 +1,56 @@
+@charset "utf-8";
+@use '../../foundation' as f;
+/* img
+----------------------------------------------------------------- */
+.c-img {
+	width: 100%;
+	position: relative;
+	&-center {
+		text-align: center;
+	}
+	&-linkIcon {
+		width: auto;
+		margin-left: 3px;
+	}
+	&-column2 {
+		width: 49%;
+		position: relative;
+		@media #{f.$pointM} {
+			width: 40%;
+		}
+		@media #{f.$pointS} {
+			width: 100%;
+		}
+	}
+	&-autoCenter {
+		text-align: center;
+		img {
+			width: auto;
+		}
+	}
+	&_text {
+		left: 0;
+		bottom: 0;
+		font-weight: 900;
+		font-size: 4.4rem;
+		position: absolute;
+		letter-spacing: 0.1em;
+		@media #{f.$point2L} {
+			font-size: f.get_vw(44, f.$vw2Lg);
+		}
+		@media #{f.$pointL} {
+			font-size: f.get_vw(40, f.$vwLg);
+		}
+		@media #{f.$pointM} {
+			width: 100%;
+			font-size: f.get_vw(24, f.$vwMd);
+		}
+		@media #{f.$pointS} {
+			@include f.fz_vw(22);
+		}
+		&-reverse {
+			right: 0;
+			left: auto;
+		}
+	}
+}

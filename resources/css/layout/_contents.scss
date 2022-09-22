@@ -1,0 +1,30 @@
+@charset "utf-8";
+@use '../foundation' as f;
+/* ============================== WRAPPER ============================ */
+.l-wrapper {
+	width: 100%;
+	overflow: hidden;
+	min-width: f.$widthAll;
+}
+/* ============================== Frame ============================== */
+.l-frame {
+	width: 100%;
+}
+/* ========================== SideContents =========================== */
+.l-side {
+	height: 100vh;
+	overflow: auto;
+	scrollbar-width: none; /*Firefox対応のスクロールバー非表示コード*/
+	-ms-overflow-style: none;/*Internet Explore対応のスクロールバー非表示コード*/
+	&::-webkit-scrollbar {
+		display: none; /*Google Chrome、Safari、Microsoft Edge対応のスクロールバー非表示コード*/
+	}
+	&_nav:hover {
+		background-color: #1947ee;
+	}
+}
+/* ============================ Contents ============================= */
+.l-contents {
+	width: 100%;
+	min-width: f.$width;
+}

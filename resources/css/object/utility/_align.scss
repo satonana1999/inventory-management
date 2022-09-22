@@ -1,0 +1,20 @@
+@charset "utf-8";
+@use '../../foundation' as f;
+/* align
+----------------------------------------------------------------- */
+.u-align {
+	&-center { text-align: center; }
+	&-tabCenter {
+		@media #{f.$pointM} {
+			text-align: center;
+		}
+	}
+	&-spCenter {
+		@media #{f.$pointS} {
+			text-align: center;
+		}
+	}
+	&-right { text-align: right; }
+	&-left { text-align: left; }
+	&-justify { text-align: justify; }
+}

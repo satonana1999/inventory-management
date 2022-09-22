@@ -1,0 +1,131 @@
+@charset "utf-8";
+@use '../../foundation' as f;
+/* btn
+----------------------------------------------------------------- */
+.c-btn {
+	text-align: center;
+	&_inner {
+		width: 100%;
+		line-height: 1;
+		margin: 0 auto;
+		max-width: 450px;
+		text-align: center;
+		display: inline-block;
+		@media #{f.$point2L} {
+			max-width: f.get_vw(450, f.$vw2Lg);
+		}
+		@media #{f.$pointL} {
+			max-width: f.get_vw(450, f.$vwLg);
+		}
+		@media #{f.$pointM} {
+			max-width: f.get_vw(400, f.$vwMd);
+		}
+		@media #{f.$pointS} {
+			max-width: initial;
+		}
+		&-widthM {
+			width: 300px;
+			@media #{f.$point2L} {
+				width: f.get_vw(300, f.$vw2Lg);
+			}
+			@media #{f.$pointL} {
+				width: f.get_vw(300, f.$vwLg);
+			}
+			@media #{f.$pointM} {
+				width: f.get_vw(280, f.$vwMd);
+			}
+			@media #{f.$pointS} {
+				width: f.get_vw(280);
+			}
+		}
+	}
+	&_innerLink {
+		width: 100%;
+		display: block;
+		font-size: 2.6rem;
+		font-weight: bold;
+		color: f.$color-white;
+		border-radius: 40px;
+		padding: 26px 0 28px;
+		transition: all .3s ease-in-out;
+		box-shadow: 0px 3px 2px 2px rgba(0,0,0,0.3);
+		background: linear-gradient(to bottom right, f.$color-orange1 40%, f.$color-orange 64%);
+		@media #{f.$point2L} {
+			font-size: f.get_vw(26, f.$vw2Lg);
+			border-radius: f.get_vw(40, f.$vw2Lg);
+			padding: f.get_vw(26, f.$vw2Lg) 0 f.get_vw(28, f.$vw2Lg);
+		}
+		@media #{f.$pointL} {
+			font-size: f.get_vw(24, f.$vwLg);
+			border-radius: f.get_vw(40, f.$vwLg);
+			padding: f.get_vw(26, f.$vwLg) 0 f.get_vw(28, f.$vwLg);
+		}
+		@media #{f.$pointM} {
+			font-size: f.get_vw(22, f.$vwMd);
+			border-radius: f.get_vw(40, f.$vwMd);
+			padding: f.get_vw(20, f.$vwMd) 0 f.get_vw(22, f.$vwMd);
+		}
+		@media #{f.$pointS} {
+			@include f.fz_vw(18);
+			border-radius: f.get_vw(40);
+			padding: f.get_vw(18) 0 f.get_vw(20);
+		}
+		&:hover {
+			opacity: 1;
+			box-shadow: none;
+			background: linear-gradient(to bottom right, f.$color-orange1, f.$color-orange1);
+		}
+		&-design {
+			background: none;
+			box-shadow: none;
+			font-size: 1.8rem;
+			font-weight: normal;
+			border-radius: 20px;
+			color: f.$color-blue;
+			padding: 10px 0 12px;
+			background-color: f.$color-white;
+			@media #{f.$point2L} {
+				font-size: f.get_vw(18, f.$vw2Lg);
+				border-radius: f.get_vw(20, f.$vw2Lg);
+				padding: f.get_vw(10, f.$vw2Lg) 0 f.get_vw(12, f.$vw2Lg);
+			}
+			@media #{f.$pointL} {
+				font-size: f.get_vw(18, f.$vwLg);
+				border-radius: f.get_vw(20, f.$vwLg);
+				padding: f.get_vw(10, f.$vwLg) 0 f.get_vw(12, f.$vwLg);
+			}
+			@media #{f.$pointM} {
+				font-size: f.get_vw(16, f.$vwMd);
+				border-radius: f.get_vw(20, f.$vwMd);
+				padding: f.get_vw(10, f.$vwMd) 0 f.get_vw(12, f.$vwMd);
+			}
+			@media #{f.$pointS} {
+				@include f.fz_vw(16);
+				border-radius: f.get_vw(20);
+				padding: f.get_vw(10) 0 f.get_vw(12);
+			}
+			&:hover {
+				opacity: 0.8;
+				background: none;
+				background-color: f.$color-white;
+			}
+		}
+	}
+	&_img {
+		max-width: 640px;
+		text-align: center;
+		display: inline-block;
+		@media #{f.$point2L} {
+			max-width: f.get_vw(640, f.$vw2Lg);
+		}
+		@media #{f.$pointL} {
+			max-width: f.get_vw(640, f.$vwLg);
+		}
+		@media #{f.$pointM} {
+			max-width: f.get_vw(450, f.$vwMd);
+		}
+		@media #{f.$pointS} {
+			max-width: initial;
+		}
+	}
+}

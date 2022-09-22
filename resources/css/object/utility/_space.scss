@@ -1,0 +1,34 @@
+@charset "utf-8";
+@use '../../foundation' as f;
+/* margin, padding
+----------------------------------------------------------------- */
+.u-mg {
+	&-topXS { @include f.spaceTopXS; }
+	&-topS 	{ @include f.spaceTopS; }
+	&-topM 	{ @include f.spaceTopM; }
+	&-topL 	{ @include f.spaceTopL; }
+	&-top2L { @include f.spaceTop2L; }
+	&-top3L { @include f.spaceTop3L; }
+	&-top4L { @include f.spaceTop4L; }
+	&-top5L { @include f.spaceTop5L; }
+	&-top6L { @include f.spaceTop6L; }
+	&-top7L { @include f.spaceTop7L; }
+	&-top8L { @include f.spaceTop8L; }
+	&-spTopM {
+		@media #{f.$pointS} {
+			@include f.spaceTopM;
+		}
+	}
+
+	&-rightXS { @include f.spaceRightXS; }
+	&-rightS 	{ @include f.spaceRightS; }
+	&-rightM 	{ @include f.spaceRightM; }
+
+	&-leftXS   { @include f.spaceLeftXS; }
+	&-leftS    { @include f.spaceLeftS; }
+	&-leftM    { @include f.spaceLeftM; }
+	&-left4L   { @include f.spaceLeft4L; }
+	&-leftAuto { margin-left: auto; }
+
+	&-bottomAuto { margin-bottom: auto; }
+}

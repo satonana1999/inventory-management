@@ -1,0 +1,219 @@
+@charset "utf-8";
+@use 'definition' as f;
+// ****************************************************************
+// placeholder selector (@extend)
+// ****************************************************************
+%displayCenter {
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+// ****************************************************************
+// mixin (@mixin)
+// ****************************************************************
+/* Clearfix */
+@mixin cf() {
+	&:after {
+		height: 0;
+		content: '';
+		clear: both;
+		display: block;
+	}
+}
+
+
+/* space */
+@mixin spaceTopXS {
+	margin-top: 5px;
+	@media #{f.$point2L} { margin-top: get_vw(5, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-top: get_vw(5, f.$vwLg); }
+	@media #{f.$pointM}  { margin-top: get_vw(5, f.$vwMd); }
+	@media #{f.$pointS}  { margin-top: get_vw(5); }
+}
+@mixin spaceTopS {
+	margin-top: 10px;
+	@media #{f.$point2L} { margin-top: get_vw(10, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-top: get_vw(10, f.$vwLg); }
+	@media #{f.$pointM}  { margin-top: get_vw(10, f.$vwMd); }
+	@media #{f.$pointS}  { margin-top: get_vw(10); }
+}
+@mixin spaceTopM {
+	margin-top: 20px;
+	@media #{f.$point2L} { margin-top: get_vw(20, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-top: get_vw(20, f.$vwLg); }
+	@media #{f.$pointM}  { margin-top: get_vw(20, f.$vwMd); }
+	@media #{f.$pointS}  { margin-top: get_vw(15); }
+}
+@mixin spaceTopL {
+	margin-top: 30px;
+	@media #{f.$point2L} { margin-top: get_vw(30, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-top: get_vw(30, f.$vwLg); }
+	@media #{f.$pointM}  { margin-top: get_vw(25, f.$vwMd); }
+	@media #{f.$pointS}  { margin-top: get_vw(20); }
+}
+@mixin spaceTop2L {
+	margin-top: 40px;
+	@media #{f.$point2L} { margin-top: get_vw(40, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-top: get_vw(40, f.$vwLg); }
+	@media #{f.$pointM}  { margin-top: get_vw(30, f.$vwMd); }
+	@media #{f.$pointS}  { margin-top: get_vw(25); }
+}
+@mixin spaceTop3L {
+	margin-top: 50px;
+	@media #{f.$point2L} { margin-top: get_vw(50, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-top: get_vw(50, f.$vwLg); }
+	@media #{f.$pointM}  { margin-top: get_vw(40, f.$vwMd); }
+	@media #{f.$pointS}  { margin-top: get_vw(30); }
+}
+@mixin spaceTop4L {
+	margin-top: 60px;
+	@media #{f.$point2L} { margin-top: get_vw(60, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-top: get_vw(60, f.$vwLg); }
+	@media #{f.$pointM}  { margin-top: get_vw(50, f.$vwMd); }
+	@media #{f.$pointS}  { margin-top: get_vw(35); }
+}
+@mixin spaceTop5L {
+	margin-top: 70px;
+	@media #{f.$point2L} { margin-top: get_vw(70, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-top: get_vw(70, f.$vwLg); }
+	@media #{f.$pointM}  { margin-top: get_vw(60, f.$vwMd); }
+	@media #{f.$pointS}  { margin-top: get_vw(45); }
+}
+@mixin spaceTop6L {
+	margin-top: 80px;
+	@media #{f.$point2L} { margin-top: get_vw(80, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-top: get_vw(80, f.$vwLg); }
+	@media #{f.$pointM}  { margin-top: get_vw(70, f.$vwMd); }
+	@media #{f.$pointS}  { margin-top: get_vw(55); }
+}
+@mixin spaceTop7L {
+	margin-top: 90px;
+	@media #{f.$point2L} { margin-top: get_vw(90, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-top: get_vw(90, f.$vwLg); }
+	@media #{f.$pointM}  { margin-top: get_vw(80, f.$vwMd); }
+	@media #{f.$pointS}  { margin-top: get_vw(60); }
+}
+@mixin spaceTop8L {
+	margin-top: 100px;
+	@media #{f.$point2L} { margin-top: get_vw(100, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-top: get_vw(100, f.$vwLg); }
+	@media #{f.$pointM}  { margin-top: get_vw(90, f.$vwMd); }
+	@media #{f.$pointS}  { margin-top: get_vw(70); }
+}
+
+@mixin spaceLeftXS {
+	margin-left: 5px;
+	@media #{f.$point2L} { margin-left: get_vw(5, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-left: get_vw(5, f.$vwLg); }
+	@media #{f.$pointM}  { margin-left: get_vw(5, f.$vwMd); }
+	@media #{f.$pointS}  { margin-left: get_vw(5); }
+}
+@mixin spaceLeftS {
+	margin-left: 10px;
+	@media #{f.$point2L} { margin-left: get_vw(10, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-left: get_vw(10, f.$vwLg); }
+	@media #{f.$pointM}  { margin-left: get_vw(10, f.$vwMd); }
+	@media #{f.$pointS}  { margin-left: get_vw(10); }
+}
+@mixin spaceLeftM {
+	margin-left: 20px;
+	@media #{f.$point2L} { margin-left: get_vw(20, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-left: get_vw(20, f.$vwLg); }
+	@media #{f.$pointM}  { margin-left: get_vw(20, f.$vwMd); }
+	@media #{f.$pointS}  { margin-left: get_vw(15); }
+}
+@mixin spaceLeftL {
+	margin-left: 30px;
+	@media #{f.$point2L} { margin-left: get_vw(30, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-left: get_vw(30, f.$vwLg); }
+	@media #{f.$pointM}  { margin-left: get_vw(25, f.$vwMd); }
+	@media #{f.$pointS}  { margin-left: get_vw(20); }
+}
+@mixin spaceLeft4L {
+	margin-left: 60px;
+	@media #{f.$point2L} { margin-left: get_vw(60, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-left: get_vw(60, f.$vwLg); }
+	@media #{f.$pointM}  { margin-left: get_vw(50, f.$vwMd); }
+	@media #{f.$pointS}  { margin-left: get_vw(40); }
+}
+
+@mixin spaceRightXS {
+	margin-right: 5px;
+	@media #{f.$point2L} { margin-right: get_vw(5, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-right: get_vw(5, f.$vwLg); }
+	@media #{f.$pointM}  { margin-right: get_vw(5, f.$vwMd); }
+	@media #{f.$pointS}  { margin-right: get_vw(5); }
+}
+@mixin spaceRightS {
+	margin-right: 10px;
+	@media #{f.$point2L} { margin-right: get_vw(10, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-right: get_vw(10, f.$vwLg); }
+	@media #{f.$pointM}  { margin-right: get_vw(10, f.$vwMd); }
+	@media #{f.$pointS}  { margin-right: get_vw(10); }
+}
+@mixin spaceRightM {
+	margin-right: 20px;
+	@media #{f.$point2L} { margin-right: get_vw(20, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-right: get_vw(20, f.$vwLg); }
+	@media #{f.$pointM}  { margin-right: get_vw(20, f.$vwMd); }
+	@media #{f.$pointS}  { margin-right: get_vw(15); }
+}
+@mixin spaceRightL {
+	margin-right: 30px;
+	@media #{f.$point2L} { margin-right: get_vw(30, f.$vw2Lg); }
+	@media #{f.$pointL}  { margin-right: get_vw(30, f.$vwLg); }
+	@media #{f.$pointM}  { margin-right: get_vw(25, f.$vwMd); }
+	@media #{f.$pointS}  { margin-right: get_vw(20); }
+}
+
+/* padding */
+@mixin paddingXS {
+	padding-top: 5px;
+	@media #{f.$point2L} { padding-top: get_vw(5, f.$vw2Lg); }
+	@media #{f.$pointL}  { padding-top: get_vw(5, f.$vwLg); }
+	@media #{f.$pointM}  { padding-top: get_vw(5, f.$vwMd); }
+	@media #{f.$pointS}  { padding-top: get_vw(5); }
+}
+@mixin paddingS {
+	padding-top: 10px;
+	@media #{f.$point2L} { padding-top: get_vw(10, f.$vw2Lg); }
+	@media #{f.$pointL}  { padding-top: get_vw(10, f.$vwLg); }
+	@media #{f.$pointM}  { padding-top: get_vw(10, f.$vwMd); }
+	@media #{f.$pointS}  { padding-top: get_vw(10); }
+}
+// ===================================================================
+// font-size → @include fz_vw(xx); （xxにはpixel相当の数値を入れる）
+// ===================================================================
+@function get_vw($size, $viewport:f.$vwSm) {
+	// f.$rate: 100 / f.$viewport;
+	$rate: calc(100 / $viewport);
+	@return $rate * $size * 1vw;
+}
+@function get_vh($size, $viewport:f.$vwSm) {
+	// f.$rate: 100 / f.$viewport;
+	$rate: calc(100 / $viewport);
+	@return $rate * $size * 1vh;
+}
+@mixin fz_vw($font_size:12) {
+	font-size: $font_size * 1px;
+	font-size: get_vw($font_size);
+}
+
+// Retina bg img
+//@include bgRetina(logo, png, 100px, 40px);
+@mixin bgRetina($image, $extension, $width, $height) {
+	background: url($image + '.' + $extension) no-repeat;
+	width: $width;
+	height: $height;
+	@media (min--moz-device-pixel-ratio: 1.3),
+		(-o-min-device-pixel-ratio: 2.6/2),
+		(-webkit-min-device-pixel-ratio: 1.3),
+		(min-device-pixel-ratio: 1.3),
+		(min-resolution: 1.3dppx) {
+			background-image: url($image + '-2x' + '.' + $extension) no-repeat;
+			background-size: $width $height;
+	}
+}

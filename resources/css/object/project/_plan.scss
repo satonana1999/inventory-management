@@ -1,0 +1,1314 @@
+@charset "utf-8";
+
+/* plan
+----------------------------------------------------------------- */
+.p-plan {
+	&-mgTopL {
+		margin-top: 150px;
+		@media #{$point2L} {
+			margin-top: get_vw(150, $vw2Lg);
+		}
+		@media #{$pointL} {
+			margin-top: get_vw(150, $vwLg);
+		}
+		@media #{$pointM} {
+			margin-top: get_vw(100, $vwMd);
+		}
+		@media #{$pointS} {
+			margin-top: get_vw(60);
+		}
+	}
+	&_block {
+		&-heightFull {
+			height: 100%;
+		}
+		&-design,
+		&-design1,
+		&-design2,
+		&-design3,
+		&-design4 {
+			display: flex;
+			padding: 40px 80px;
+			align-items: center;
+			border-radius: 10px;
+			background-size: auto, auto;
+			background-color: $color-white;
+			background-repeat: no-repeat;
+			border: 4px solid $color-blue15;
+			justify-content: space-between;
+			background-position: top right, bottom left;
+			background-image: url('../img/plan/triangle5-right.webp'),url('../img/plan/triangle5-left.webp');
+			@media #{$point2L} {
+				padding: get_vw(40, $vw2Lg) get_vw(80, $vw2Lg);
+			}
+			@media #{$pointL} {
+				padding: get_vw(40, $vwLg) get_vw(40, $vwLg);
+			}
+			@media #{$pointM} {
+				display: block;
+				border-width: 2px;
+				background-size: 15%, 15%;
+				padding: get_vw(35, $vwMd) get_vw(25, $vwMd);
+			}
+			@media #{$pointS} {
+				padding: get_vw(30) get_vw(15);
+			}
+		}
+		&-design1 {
+			border: 4px solid $color-green;
+			background-image: url('../img/plan/triangle1-right.webp'),url('../img/plan/triangle1-left.webp');
+		}
+		&-design2 {
+			border: 4px solid $color-blue14;
+			background-image: url('../img/plan/triangle2-right.webp'),url('../img/plan/triangle2-left.webp');
+		}
+		&-design3 {
+			border: 4px solid $color-red2;
+			background-image: url('../img/plan/triangle3-right.webp'),url('../img/plan/triangle3-left.webp');
+		}
+		&-design4 {
+			border: 4px solid $color-yellow2;
+			background-image: url('../img/plan/triangle4-right.webp'),url('../img/plan/triangle4-left.webp');
+		}
+		&-design5,
+		&-design6 {
+			border-radius: 10px;
+			padding: 50px 30px 30px;
+			background-size: auto, auto;
+			background-color: $color-white;
+			background-repeat: no-repeat;
+			border: 4px solid $color-blue15;
+			justify-content: space-between;
+			background-position: top right, bottom left;
+			background-image: url('../img/plan/triangle5-right.webp'),url('../img/plan/triangle5-left.webp');
+			@media #{$point2L} {
+				padding: get_vw(50, $vw2Lg) get_vw(20, $vw2Lg) get_vw(30, $vw2Lg);
+			}
+			@media #{$pointL} {
+				background-size: 25%, 25%;
+				padding: get_vw(50, $vwLg) get_vw(20, $vwLg) get_vw(30, $vwLg);
+			}
+			@media #{$pointM} {
+				display: block;
+				border-width: 2px;
+				background-size: 15%, 15%;
+				padding: get_vw(35, $vwMd) get_vw(20, $vwMd) get_vw(25, $vwMd);
+			}
+			@media #{$pointS} {
+				padding: get_vw(25) get_vw(15);
+			}
+		}
+		&-design6 {
+			border: 4px solid $color-green;
+			background-image: url('../img/plan/triangle1-right.webp'),url('../img/plan/triangle1-left.webp');
+		}
+	}
+	&_blockImg {
+		width: 100%;
+		@media #{$pointM} {
+			width: 80%;
+			margin: 0 auto;
+		}
+		@media #{$pointS} {
+			width: 70%;
+		}
+		&-column2 {
+			width: 42.5%;
+			@media #{$pointM} {
+				width: 60%;
+				margin: 0 auto;
+			}
+			@media #{$pointS} {
+				width: 60%;
+			}
+		}
+	}
+	&_blockBody {
+		width: 100%;
+		margin-top: 20px;
+		@media #{$point2L} {
+			margin-top: get_vw(20, $vw2Lg);
+		}
+		@media #{$pointL} {
+			margin-top: get_vw(20, $vwLg);
+		}
+		@media #{$pointM} {
+			margin-top: get_vw(20, $vwMd);
+		}
+		@media #{$pointS} {
+			width: 100%;
+			margin-top: get_vw(20);
+		}
+		&-column2 {
+			width: 48%;
+			margin-top: 0;
+			@media #{$point2L} {
+				margin-top: 0;
+			}
+			@media #{$pointL} {
+				margin-top: 0;
+			}
+			@media #{$pointM} {
+				width: 80%;
+				margin: get_vw(30, $vwMd) auto 0;
+			}
+			@media #{$pointS} {
+				width: 100%;
+				margin-top: get_vw(20);
+			}
+		}
+	}
+	&_table {
+		margin-top: 30px;
+		@media #{$point2L} {
+			margin-top: get_vw(30, $vw2Lg);
+		}
+		@media #{$pointL} {
+			margin-top: get_vw(30, $vwLg);
+		}
+		@media #{$pointM} {
+			margin-top: get_vw(20, $vwMd);
+		}
+		@media #{$pointS} {
+			margin-top: get_vw(20);
+		}
+	}
+	&_tableTr {
+		border-bottom: 5px solid $color-red1;
+		@media #{$pointM} {
+			border-bottom: 3px solid $color-red1;
+		}
+	}
+	&_tableTitle {
+		width: 24%;
+		padding: 20px 0;
+		text-align: left;
+		@media #{$point2L} {
+			padding: get_vw(20, $vw2Lg) 0;
+		}
+		@media #{$pointL} {
+			padding: get_vw(20, $vwLg) 0;
+		}
+		@media #{$pointM} {
+			width: 30%;
+			padding: get_vw(20, $vwMd) 0;
+		}
+		@media #{$pointS} {
+			padding: get_vw(10) 0;
+		}
+	}
+	&_tableTitleText {
+		display: inline-block;
+		font-size: 2rem;
+		padding: 6px 20px;
+		border-radius: 5px;
+		color: $color-white;
+		text-align: center;
+		background-color: $color-blue3;
+		@media #{$point2L} {
+			font-size: get_vw(20, $vw2Lg);
+			padding: get_vw(6, $vw2Lg) get_vw(20, $vw2Lg);
+		}
+		@media #{$pointL} {
+			font-size: get_vw(20, $vwLg);
+			padding: get_vw(6, $vwLg) get_vw(20, $vwLg);
+		}
+		@media #{$pointM} {
+			font-size: get_vw(18, $vwMd);
+			padding: get_vw(6, $vwMd) get_vw(15, $vwMd);
+		}
+		@media #{$pointS} {
+			@include fz_vw(16);
+			padding: get_vw(6) get_vw(15);
+		}
+	}
+	&_tableData {
+		width: 76%;
+		padding: 20px 0;
+		font-weight: bold;
+		font-size: 2.4rem;
+		text-align: center;
+		@media #{$point2L} {
+			padding: get_vw(20, $vw2Lg) 0;
+			font-size: get_vw(24, $vw2Lg);
+		}
+		@media #{$pointL} {
+			padding: get_vw(20, $vwLg) 0;
+			font-size: get_vw(24, $vwLg);
+		}
+		@media #{$pointM} {
+			width: 70%;
+			padding: get_vw(20, $vwMd) 0;
+			font-size: get_vw(22, $vwMd);
+		}
+		@media #{$pointS} {
+			@include fz_vw(18);
+			padding: get_vw(10) 0;
+		}
+		&-sizeS {
+			font-size: 2rem;
+			@media #{$point2L} {
+				font-size: get_vw(20, $vw2Lg);
+			}
+			@media #{$pointL} {
+				font-size: get_vw(20, $vwLg);
+			}
+			@media #{$pointM} {
+				font-size: get_vw(18, $vwMd);
+			}
+			@media #{$pointS} {
+				@include fz_vw(16);
+			}
+		}
+		&-price {
+			font-size: 5rem;
+			color: $color-red;
+			font-family: 'Noto Serif JP', sans-serif;
+			@media #{$point2L} {
+				font-size: get_vw(50, $vw2Lg);
+			}
+			@media #{$pointL} {
+				font-size: get_vw(50, $vwLg);
+			}
+			@media #{$pointM} {
+				font-size: get_vw(44, $vwMd);
+			}
+			@media #{$pointS} {
+				@include fz_vw(34);
+			}
+		}
+	}
+}
+.p-planPrice {
+	&-icon {
+		position: relative;
+		&::before,
+		&::after {
+			left: 50%;
+			content: '';
+			width: 140px;
+			height: 140px;
+			position: absolute;
+			background-size: cover;
+			transform: translateX(-50%);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-image: url('../img/plan/plan-icon.webp');
+			@media #{$point2L} {
+				width: get_vw(140, $vw2Lg);
+				height: get_vw(140, $vw2Lg);
+			}
+			@media #{$pointL} {
+				width: get_vw(140, $vwLg);
+				height: get_vw(140, $vwLg);
+			}
+			@media #{$pointM} {
+				width: get_vw(100, $vwMd);
+				height: get_vw(100, $vwMd);
+			}
+			@media #{$pointS} {
+				width: get_vw(70);
+				height: get_vw(70);
+			}
+		}
+		&::before {
+			top: -70px;
+			@media #{$point2L} {
+				top: get_vw(-70, $vw2Lg);
+			}
+			@media #{$pointL} {
+				top: get_vw(-70, $vwLg);
+			}
+			@media #{$pointM} {
+				top: get_vw(-50, $vwMd);
+			}
+			@media #{$pointS} {
+				top: get_vw(-35);
+			}
+		}
+		&::after {
+			bottom: -70px;
+			@media #{$point2L} {
+				bottom: get_vw(-70, $vw2Lg);
+			}
+			@media #{$pointL} {
+				bottom: get_vw(-70, $vwLg);
+			}
+			@media #{$pointM} {
+				bottom: get_vw(-50, $vwMd);
+			}
+			@media #{$pointS} {
+				bottom: get_vw(-35);
+			}
+		}
+	}
+	&_inner {
+		margin-top: 60px;
+		@media #{$point2L} {
+			margin-top: get_vw(60, $vw2Lg);
+		}
+		@media #{$pointL} {
+			margin-top: get_vw(60, $vwLg);
+		}
+		@media #{$pointM} {
+			margin-top: get_vw(50, $vwMd);
+		}
+		@media #{$pointS} {
+			margin-top: get_vw(40);
+		}
+	}
+	&_block {
+		border-radius: 10px;
+		padding: 25px 30px 70px;
+		background-color: $color-gray;
+		@media #{$point2L} {
+			padding: get_vw(25, $vw2Lg) get_vw(30, $vw2Lg) get_vw(70, $vw2Lg);
+		}
+		@media #{$pointL} {
+			padding: get_vw(25, $vwLg) get_vw(30, $vwLg) get_vw(70, $vwLg);
+		}
+		@media #{$pointM} {
+			padding: get_vw(20, $vwMd) get_vw(20, $vwMd) get_vw(60, $vwMd);
+		}
+		@media #{$pointS} {
+			padding: get_vw(20) get_vw(10) get_vw(50);
+		}
+	}
+	&_blockBody {
+		display: flex;
+		margin-top: 20px;
+		align-items: center;
+		justify-content: space-between;
+		@media #{$point2L} {
+			margin-top: get_vw(20, $vw2Lg);
+		}
+		@media #{$pointL} {
+			margin-top: get_vw(20, $vwLg);
+		}
+		@media #{$pointM} {
+			display: block;
+			margin-top: get_vw(20, $vwMd);
+		}
+		@media #{$pointS} {
+			margin-top: get_vw(15);
+		}
+	}
+	&_box {
+		width: 36.5%;
+		@media #{$pointM} {
+			width: 100%;
+			margin-top: get_vw(20, $vwMd);
+		}
+		@media #{$pointS} {
+			margin-top: get_vw(20);
+		}
+		// display: flex;
+		// align-items: center;
+		// flex-direction: column;
+	}
+	&_boxInner {
+		display: flex;
+		align-items: center;
+		@include spaceTopXS;
+		@media #{$pointM} {
+			justify-content: center;
+		}
+	}
+	&_list {
+		width: 62%;
+		height: 170px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-between;
+		@media #{$point2L} {
+			height: get_vw(170, $vw2Lg);
+		}
+		@media #{$pointL} {
+			height: get_vw(150, $vwLg);
+		}
+		@media #{$pointM} {
+			width: 100%;
+			height: auto;
+			align-items: center;
+			flex-direction: row;
+			margin-top: get_vw(20, $vwMd);
+		}
+		@media #{$pointS} {
+			margin-top: get_vw(20);
+		}
+	}
+	&_listItem {
+		display: flex;
+		font-size: 2rem;
+		font-weight: bold;
+		align-items: center;
+		@media #{$point2L} {
+			font-size: get_vw(20, $vw2Lg);
+		}
+		@media #{$pointL} {
+			font-size: get_vw(16, $vwLg);
+		}
+		@media #{$pointM} {
+			width: 49%;
+			font-size: get_vw(16, $vwMd);
+		}
+		@media #{$pointS} {
+			@include fz_vw(14);
+		}
+		&:nth-child(n + 3) {
+			@media #{$pointM} {
+				margin-top: get_vw(20, $vwMd);
+			}
+			@media #{$pointS} {
+				margin-top: get_vw(15);
+			}
+		}
+		&:nth-child(odd) {
+			@media #{$pointS} {
+				width: 41%;
+			}
+		}
+		&:nth-child(even) {
+			@media #{$pointS} {
+				width: 58%;
+			}
+		}
+		&:last-child {
+			@media #{$pointM} {
+				width: 100%;
+			}
+			@media #{$pointS} {
+				width: 100%;
+			}
+		}
+		&-number {
+			min-width: 44px;
+			min-height: 44px;
+			display: flex;
+			line-min-height: 1.2;
+			font-size: 2.4rem;
+			margin-right: 5px;
+			align-items: center;
+			border-radius: 100%;
+			color: $color-white;
+			justify-content: center;
+			background-color: $color-blue3;
+			@media #{$point2L} {
+				min-width: get_vw(44, $vw2Lg);
+				min-height: get_vw(44, $vw2Lg);
+				font-size: get_vw(24, $vw2Lg);
+			}
+			@media #{$pointL} {
+				min-width: get_vw(40, $vwLg);
+				min-height: get_vw(40, $vwLg);
+				font-size: get_vw(22, $vwLg);
+			}
+			@media #{$pointM} {
+				min-width: get_vw(40, $vwMd);
+				min-height: get_vw(40, $vwMd);
+				font-size: get_vw(17, $vwMd);
+			}
+			@media #{$pointS} {
+				min-width: get_vw(32);
+				min-height: get_vw(32);
+				@include fz_vw(14);
+			}
+		}
+		&-notes {
+			font-size: 1.4rem;
+			font-weight: normal;
+			@media #{$point2L} {
+				font-size: get_vw(14, $vw2Lg);
+			}
+			@media #{$pointL} {
+				font-size: get_vw(14, $vwLg);
+			}
+			@media #{$pointM} {
+				font-size: get_vw(14, $vwMd);
+			}
+			@media #{$pointS} {
+				@include fz_vw(12);
+			}
+		}
+	}
+	&_img {
+		width: 1243px;
+		margin: 0 auto;
+		@media #{$point2L} {
+			width: get_vw(1243, $vw2Lg);
+		}
+		@media #{$pointL} {
+			width: 100%;
+		}
+	}
+}
+.p-planOther {
+	&_list {
+		margin-top: 90px;
+		@media #{$point2L} {
+			margin-top: get_vw(80, $vw2Lg);
+		}
+		@media #{$pointL} {
+			margin-top: get_vw(70, $vwLg);
+		}
+		@media #{$pointM} {
+			display: block;
+			margin-top: get_vw(60, $vwMd);
+		}
+		@media #{$pointS} {
+			margin-top: get_vw(45);
+		}
+	}
+	&_listItem {
+		&:nth-child(n + 2) {
+			margin-top: 50px;
+			@media #{$point2L} {
+				margin-top: get_vw(50, $vw2Lg);
+			}
+			@media #{$pointL} {
+				margin-top: get_vw(40, $vwLg);
+			}
+			@media #{$pointM} {
+				display: block;
+				margin-top: get_vw(40, $vwMd);
+			}
+			@media #{$pointS} {
+				margin-top: get_vw(30);
+			}
+		}
+	}
+}
+.p-planOption {
+	&_list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 80px;
+		justify-content: space-between;
+		@media #{$point2L} {
+			margin-top: get_vw(80, $vw2Lg);
+		}
+		@media #{$pointL} {
+			margin-top: get_vw(70, $vwLg);
+		}
+		@media #{$pointM} {
+			margin-top: get_vw(50, $vwMd);
+		}
+		@media #{$pointS} {
+			display: block;
+			margin-top: get_vw(40);
+		}
+	}
+	&_listItem {
+		width: 24.3%;
+		@media #{$pointM} {
+			width: 49%;
+		}
+		@media #{$pointS} {
+			width: 100%;
+		}
+		&:nth-child(n + 2) {
+			@media #{$pointS} {
+				margin-top: get_vw(25);
+			}
+		}
+		&:nth-child(n + 3) {
+			@media #{$pointM} {
+				margin-top: 2%;
+			}
+			@media #{$pointS} {
+				margin-top: get_vw(25);
+			}
+		}
+	}
+	&_pointList {
+		margin-top: 80px;
+		@media #{$point2L} {
+			margin-top: get_vw(80, $vw2Lg);
+		}
+		@media #{$pointL} {
+			margin-top: get_vw(70, $vwLg);
+		}
+		@media #{$pointM} {
+			margin-top: get_vw(60, $vwMd);
+		}
+		@media #{$pointS} {
+			display: block;
+			margin-top: get_vw(50);
+		}
+		&::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+	}
+	&_pointListItem {
+		width: 49%;
+		float: left;
+		display: flex;
+		position: relative;
+		border-radius: 10px;
+		background-color: $color-green2;
+		@media #{$pointM} {
+			float: none;
+			width: 100%;
+		}
+		&:nth-child(1) {
+			&::before,
+			&::after {
+				top: 50%;
+				content: "";
+				position: absolute;
+				transform: translateY(-50%);
+				@media #{$pointM} {
+					top: auto;
+				}
+			}
+			&::before {
+				z-index: 2;
+				right: -60px;
+				border: 20px solid transparent;
+				border-left: 40px solid $color-green2;
+				@media #{$point2L} {
+					right: get_vw(-60, $vw2Lg);
+					border: get_vw(20, $vw2Lg) solid transparent;
+					border-left: get_vw(40, $vw2Lg) solid $color-green2;
+				}
+				@media #{$pointL} {
+					right: get_vw(-50, $vwLg);
+					border: get_vw(15, $vwLg) solid transparent;
+					border-left: get_vw(35, $vwLg) solid $color-green2;
+				}
+				@media #{$pointM} {
+					right: 50%;
+					bottom: get_vw(-49, $vwMd);
+					transform: translateX(50%);
+					border: get_vw(25, $vwMd) solid transparent;
+					border-top: get_vw(25, $vwMd) solid $color-green2;
+				}
+				@media #{$pointS} {
+					bottom: get_vw(-49);
+					border: get_vw(25) solid transparent;
+					border-top: get_vw(25) solid $color-green2;
+				}
+			}
+			&::after {
+				z-index: 1;
+				right: -80px;
+				border: 30px solid transparent;
+				border-left: 50px solid $color-white;
+				@media #{$point2L} {
+					right: get_vw(-80, $vw2Lg);
+					border: get_vw(30, $vw2Lg) solid transparent;
+					border-left: get_vw(50, $vw2Lg) solid $color-white;
+				}
+				@media #{$pointL} {
+					right: get_vw(-70, $vwLg);
+					border: get_vw(25, $vwLg) solid transparent;
+					border-left: get_vw(45, $vwLg) solid $color-white;
+				}
+				@media #{$pointM} {
+					right: 50%;
+					bottom: get_vw(-60, $vwMd);
+					transform: translateX(50%);
+					border: get_vw(30, $vwMd) solid transparent;
+					border-top: get_vw(30, $vwMd) solid $color-white;
+				}
+				@media #{$pointS} {
+					bottom: get_vw(-60);
+					border: get_vw(30) solid transparent;
+					border-top: get_vw(30) solid $color-white;
+				}
+			}
+		}
+		&:nth-child(2) {
+			float: right;
+			@media #{$pointM} {
+				float: none;
+			}
+			&::before,
+			&::after {
+				left: 50%;
+				content: "";
+				position: absolute;
+				transform: translateX(-50%);
+			}
+			&::before {
+				z-index: 2;
+				bottom: -60px;
+				border: 20px solid transparent;
+				border-top: 40px solid $color-blue19;
+				@media #{$point2L} {
+					bottom: get_vw(-60, $vw2Lg);
+					border: get_vw(20, $vw2Lg) solid transparent;
+					border-top: get_vw(40, $vw2Lg) solid $color-blue19;
+				}
+				@media #{$pointL} {
+					bottom: get_vw(-50, $vwLg);
+					border: get_vw(15, $vwLg) solid transparent;
+					border-top: get_vw(35, $vwLg) solid $color-blue19;
+				}
+				@media #{$pointM} {
+					bottom: get_vw(-49, $vwMd);
+					border: get_vw(25, $vwMd) solid transparent;
+					border-top: get_vw(25, $vwMd) solid $color-blue19;
+				}
+				@media #{$pointS} {
+					bottom: get_vw(-49);
+					border: get_vw(25) solid transparent;
+					border-top: get_vw(25) solid $color-blue19;
+				}
+			}
+			&::after {
+				z-index: 1;
+				bottom: -80px;
+				border: 30px solid transparent;
+				border-top: 50px solid $color-white;
+				@media #{$point2L} {
+					bottom: get_vw(-80, $vw2Lg);
+					border: get_vw(30, $vw2Lg) solid transparent;
+					border-top: get_vw(50, $vw2Lg) solid $color-white;
+				}
+				@media #{$pointL} {
+					bottom: get_vw(-70, $vwLg);
+					border: get_vw(25, $vwLg) solid transparent;
+					border-top: get_vw(45, $vwLg) solid $color-white;
+				}
+				@media #{$pointM} {
+					bottom: get_vw(-60, $vwMd);
+					border: get_vw(30, $vwMd) solid transparent;
+					border-top: get_vw(30, $vwMd) solid $color-white;
+				}
+				@media #{$pointS} {
+					bottom: get_vw(-60);
+					border: get_vw(30) solid transparent;
+					border-top: get_vw(30) solid $color-white;
+				}
+			}
+		}
+		&:nth-child(3) {
+			float: right;
+			@media #{$pointM} {
+				float: none;
+			}
+			&::before,
+			&::after {
+				top: 50%;
+				content: "";
+				position: absolute;
+				transform: translateY(-50%);
+				@media #{$pointM} {
+					top: auto;
+				}
+			}
+			&::before {
+				z-index: 2;
+				left: -60px;
+				border: 20px solid transparent;
+				border-right: 40px solid $color-yellow3;
+				@media #{$point2L} {
+					left: get_vw(-60, $vw2Lg);
+					border: get_vw(20, $vw2Lg) solid transparent;
+					border-right: get_vw(40, $vw2Lg) solid $color-yellow3;
+				}
+				@media #{$pointL} {
+					left: get_vw(-50, $vwLg);
+					border: get_vw(15, $vwLg) solid transparent;
+					border-right: get_vw(35, $vwLg) solid $color-yellow3;
+				}
+				@media #{$pointM} {
+					left: 50%;
+					bottom: get_vw(-49, $vwMd);
+					transform: translateX(-50%);
+					border: get_vw(25, $vwMd) solid transparent;
+					border-top: get_vw(25, $vwMd) solid $color-yellow3;
+				}
+				@media #{$pointS} {
+					bottom: get_vw(-49);
+					border: get_vw(25) solid transparent;
+					border-top: get_vw(25) solid $color-yellow3;
+				}
+			}
+			&::after {
+				z-index: 1;
+				left: -80px;
+				border: 30px solid transparent;
+				border-right: 50px solid $color-white;
+				@media #{$point2L} {
+					left: get_vw(-80, $vw2Lg);
+					border: get_vw(30, $vw2Lg) solid transparent;
+					border-right: get_vw(50, $vw2Lg) solid $color-white;
+				}
+				@media #{$pointL} {
+					left: get_vw(-70, $vwLg);
+					border: get_vw(25, $vwLg) solid transparent;
+					border-right: get_vw(45, $vwLg) solid $color-white;
+				}
+				@media #{$pointM} {
+					left: 50%;
+					bottom: get_vw(-60, $vwMd);
+					transform: translateX(-50%);
+					border: get_vw(30, $vwMd) solid transparent;
+					border-top: get_vw(30, $vwMd) solid $color-white;
+				}
+				@media #{$pointS} {
+					bottom: get_vw(-60);
+					border: get_vw(30) solid transparent;
+					border-top: get_vw(30) solid $color-white;
+				}
+			}
+		}
+		&:nth-child(4) {
+			&::before,
+			&::after {
+				display: none;
+			}
+		}
+		&:nth-child(n + 2) {
+			@media #{$pointM} {
+				margin-top: get_vw(20, $vwMd);
+			}
+			@media #{$pointS} {
+				margin-top: get_vw(20);
+			}
+		}
+		&:nth-child(n + 3) {
+			margin-top: 2%;
+			@media #{$pointM} {
+				margin-top: get_vw(20, $vwMd);
+			}
+			@media #{$pointS} {
+				margin-top: get_vw(20);
+			}
+		}
+		&-bg  { background-color: $color-blue19; }
+		&-bg1 { background-color: $color-yellow3; }
+		&-bg2 { background-color: $color-red7; }
+		&-reverse {
+			flex-direction: row-reverse;
+			@media #{$pointM} {
+				flex-direction: row;
+			}
+		}
+	}
+	&_pointListTitle {
+		width: 18.5%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px 0 0 10px;
+		background: linear-gradient(to bottom right, $color-green3 40%, $color-green4 85%);
+		@media #{$pointL} {
+			width: 16.5%;
+		}
+		@media #{$pointM} {
+			width: 19%;
+		}
+		&-bg {
+			background: linear-gradient(to bottom right, $color-blue20 40%, $color-blue21 85%);
+		}
+		&-bg1 {
+			background: linear-gradient(to bottom right, $color-orange3 40%, $color-red8 85%);
+		}
+		&-bg2 {
+			background: linear-gradient(to bottom right, $color-red8 40%, $color-red9 85%);
+		}
+		&-reverse {
+			border-radius: 0 10px 10px 0;
+			@media #{$pointM} {
+				border-radius: 10px 0 0 10px;
+			}
+		}
+	}
+	&_pointListBlock {
+		width: 81.5%;
+		padding: 20px 55px 30px 45px;
+		@media #{$point2L} {
+			padding: get_vw(20, $vw2Lg) get_vw(50, $vw2Lg) get_vw(30, $vw2Lg) get_vw(45, $vw2Lg);
+		}
+		@media #{$pointL} {
+			width: 83.5%;
+			padding: get_vw(20, $vw2Lg) get_vw(24, $vw2Lg) get_vw(30, $vw2Lg) get_vw(24, $vw2Lg);
+		}
+		@media #{$pointM} {
+			width: 81%;
+			padding: get_vw(20, $vwMd) get_vw(15, $vwMd) get_vw(25, $vwMd);
+		}
+		@media #{$pointS} {
+			padding: get_vw(20) get_vw(15) get_vw(25);
+		}
+	}
+	&_block {
+		display: flex;
+		margin-top: 180px;
+		align-items: flex-start;
+		justify-content: space-between;
+		@media #{$point2L} {
+			margin-top: get_vw(180, $vw2Lg);
+		}
+		@media #{$pointL} {
+			margin-top: get_vw(160, $vwLg);
+		}
+		@media #{$pointM} {
+			display: block;
+			margin-top: get_vw(120, $vwMd);
+		}
+		@media #{$pointS} {
+			margin-top: get_vw(60);
+		}
+	}
+	&_blockBody {
+		width: 52%;
+		@media #{$point2L} {
+		}
+		@media #{$pointL} {
+		}
+		@media #{$pointM} {
+			width: 100%;
+			margin: get_vw(30, $vwMd) auto 0;
+		}
+		@media #{$pointS} {
+			width: 100%;
+			margin-top: get_vw(20);
+		}
+	}
+	&_img {
+		text-align: center;
+		@media #{$pointM} {
+			width: 75%;
+			margin: 0 auto;
+		}
+		@media #{$pointS} {
+			width: 60%;
+		}
+		&-column2 {
+			width: 43.5%;
+			@media #{$pointM} {
+				width: 60%;
+			}
+			@media #{$pointS} {
+				width: 70%;
+			}
+		}
+	}
+}
+.p-planFlow {
+	&_list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 90px;
+		justify-content: space-between;
+		@media #{$point2L} {
+			margin-top: get_vw(90, $vw2Lg);
+		}
+		@media #{$pointL} {
+			margin-top: get_vw(80, $vwLg);
+		}
+		@media #{$pointM} {
+			margin-top: get_vw(60, $vwMd);
+		}
+		@media #{$pointS} {
+			margin-top: get_vw(50);
+		}
+	}
+	&_listItem {
+		width: 23.5%;
+		display: flex;
+		overflow: hidden;
+		border-radius: 10px;
+		flex-direction: column;
+		background-color: $color-white;
+		@media #{$pointM} {
+			width: 49%;
+		}
+		@media #{$pointS} {
+			width: 100%;
+		}
+		&:nth-child(n + 2) {
+			@media #{$pointS} {
+				margin-top: get_vw(20);
+			}
+		}
+		&:nth-child(n + 3) {
+			@media #{$pointM} {
+				margin-top: get_vw(20, $vwMd);
+			}
+			@media #{$pointS} {
+				margin-top: get_vw(20);
+			}
+		}
+		&:nth-child(n + 5) {
+			width: 49%;
+			margin-top: 3%;
+			@media #{$pointM} {
+				margin-top: get_vw(20, $vwMd);
+			}
+			@media #{$pointS} {
+				width: 100%;
+				margin-top: get_vw(20);
+			}
+		}
+	}
+	&_block {
+		padding: 50px 25px 50px;
+		@media #{$point2L} {
+			padding: get_vw(50, $vw2Lg) get_vw(20, $vw2Lg) get_vw(50, $vw2Lg);
+		}
+		@media #{$pointL} {
+			padding: get_vw(50, $vwLg) get_vw(15, $vwLg) get_vw(40, $vwLg);
+		}
+		@media #{$pointM} {
+			padding: get_vw(40, $vwMd) get_vw(15, $vwMd) get_vw(40, $vwMd);
+		}
+		@media #{$pointS} {
+			padding: get_vw(35) get_vw(10) get_vw(25);
+		}
+		&-flex,
+		&-design {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			@media #{$pointM} {
+				display: block;
+			}
+		}
+		&-design {
+			@include spaceTopL;
+			border-radius: 10px;
+			background-color: $color-white;
+		}
+	}
+	&_blockBody {
+		@include spaceTopM;
+		&-column2 {
+			width: 65%;
+			margin-top: 0;
+			@media #{$point2L} {
+				margin-top: 0;
+			}
+			@media #{$pointL} {
+				width: 67%;
+				margin-top: 0;
+			}
+			@media #{$pointM} {
+				width: 100%;
+				@include spaceTopM;
+			}
+		}
+	}
+	&_img {
+		text-align: center;
+		@media #{$pointM} {
+			width: 50%;
+			margin: 0 auto;
+		}
+		@media #{$pointS} {
+			width: 45%;
+		}
+		img {
+      width: auto;
+    }
+		&-column2 {
+			width: 33%;
+			@media #{$pointL} {
+				width: 31%;
+			}
+			@media #{$pointM} {
+				width: 100%;
+			}
+			@media #{$pointS} {
+				width: 42%;
+			}
+		}
+		&-column2spL {
+			width: 33%;
+			@media #{$pointL} {
+				width: 31%;
+			}
+			@media #{$pointM} {
+				width: 100%;
+			}
+			@media #{$pointS} {
+				width: 70%;
+			}
+		}
+	}
+	&_titleText {
+		font-size: 4.4rem;
+		color: $color-red;
+		@media #{$point2L} {
+			font-size: get_vw(44, $vw2Lg);
+		}
+		@media #{$pointL} {
+			font-size: get_vw(35, $vwLg);
+		}
+		@media #{$pointM} {
+			font-size: get_vw(26, $vwMd);
+		}
+		@media #{$pointS} {
+			@include fz_vw(20);
+		}
+	}
+}
+.p-planCost {
+	position: relative;
+	&::after {
+		left: 50%;
+		content: '';
+		width: 140px;
+		height: 140px;
+		position: absolute;
+		background-size: cover;
+		transform: translateX(-50%);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url('../img/plan/plan-icon.webp');
+		@media #{$point2L} {
+			width: get_vw(140, $vw2Lg);
+			height: get_vw(140, $vw2Lg);
+		}
+		@media #{$pointL} {
+			width: get_vw(140, $vwLg);
+			height: get_vw(140, $vwLg);
+		}
+		@media #{$pointM} {
+			width: get_vw(100, $vwMd);
+			height: get_vw(100, $vwMd);
+		}
+		@media #{$pointS} {
+			width: get_vw(70);
+			height: get_vw(70);
+		}
+		bottom: -70px;
+		@media #{$point2L} {
+			bottom: get_vw(-70, $vw2Lg);
+		}
+		@media #{$pointL} {
+			bottom: get_vw(-70, $vwLg);
+		}
+		@media #{$pointM} {
+			bottom: get_vw(-50, $vwMd);
+		}
+		@media #{$pointS} {
+			bottom: get_vw(-35);
+		}
+	}
+	&_list {
+		display: flex;
+		justify-content: space-between;
+		@media #{$pointM} {
+			display: block;
+		}
+	}
+	&_listItem {
+		width: 47.5%;
+		position: relative;
+		@media #{$pointM} {
+			width: 100%;
+		}
+		&:first-child {
+			&::after {
+				top: 50%;
+				z-index: 1;
+				content: '';
+				right: -14.5%;
+				width: 117px;
+				height: 103px;
+				position: absolute;
+				background-size: cover;
+				transform: translateY(-50%);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-image: url('../img/plan/cost-arrow.webp');
+				@media #{$point2L} {
+					right: -13.5%;
+					width: get_vw(100, $vw2Lg);
+					height: get_vw(88, $vw2Lg);
+				}
+				@media #{$pointL} {
+					top: 30%;
+					right: -14.5%;
+					width: get_vw(100, $vwLg);
+					height: get_vw(88, $vwLg);
+				}
+				@media #{$pointM} {
+					top: auto;
+					right: 43%;
+					bottom: get_vw(-30, $vwMd);
+					width: get_vw(90, $vwMd);
+					height: get_vw(79, $vwMd);
+					transform: translateY(50%) rotate(90deg);
+				}
+				@media #{$pointS} {
+					width: get_vw(70);
+					height: get_vw(62);
+					bottom: get_vw(-25);
+				}
+			}
+		}
+		&:nth-child(n + 2) {
+			@media #{$pointM} {
+				margin-top: get_vw(60, $vwMd);
+			}
+			@media #{$pointS} {
+				margin-top: get_vw(40);
+			}
+		}
+	}
+	&_block {
+		padding: 30px 20px;
+		border-radius: 10px;
+		background-color: $color-white;
+		@media #{$point2L} {
+			padding: get_vw(30, $vw2Lg) get_vw(20, $vw2Lg);
+		}
+		@media #{$pointL} {
+			padding: get_vw(30, $vwLg) get_vw(15, $vwLg);
+		}
+		@media #{$pointM} {
+			padding: get_vw(30, $vwMd) get_vw(15, $vwMd);
+		}
+		@media #{$pointS} {
+			padding: get_vw(30) get_vw(10);
+		}
+	}
+}
+// 新規作成、運用保守ページの出し分け
+// 運用保守
+// 新規作成
+#planBundle {
+	.p-plan-operation {
+		display: none;
+	}
+}
+#planOperation {
+	.p-plan-bundle {
+		display: none;
+	}
+	.p-planFlow_listItem {
+		&:nth-child(n + 5) {
+			display: none;
+		}
+	}
+	.p-planOption_listItem {
+		width: 30%;
+		@media #{$pointM} {
+			width: 32.5%;
+		}
+		@media #{$pointS} {
+			width: 100%;
+		}
+		&:first-child {
+			display: none;
+		}
+		&:nth-child(n + 3) {
+			@media #{$pointM} {
+				margin-top: 0;
+			}
+			@media #{$pointS} {
+				margin-top: get_vw(25);
+			}
+		}
+	}
+}
