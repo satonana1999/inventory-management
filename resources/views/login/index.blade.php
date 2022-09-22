@@ -21,8 +21,7 @@
 						<p class="mt-2 text-sm text-gray-500">Please login to your id</p>
 					</div>
 					<!-- <p class="text-center text-sm text-orange-700">IDを入力してください</p> -->
-					<form class="mt-8 space-y-6" action="/top" method="get">{{-- Memo デモ用にGETを設置 システム導入時POSTに変更 method="post" --}}
-						<input type="hidden" name="remember" value="true">
+					<form class="mt-8 space-y-6" action="{{ route('top') }}" method="post">
 						<div class="relative">
 							<div class="absolute right-3 mt-4">
 								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
