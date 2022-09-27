@@ -3,26 +3,30 @@
 @use 'inc' as i;
 /* base
 ----------------------------------------------------------------- */
-img {
-	width: 100%;
-	height: auto;
-	max-width: 100%;
-	vertical-align: bottom;
-}
 .cf::after {
-	display: block;
 	content: "";
-	clear: both;
+	@apply block clear-both;
 }
 input::placeholder,textarea::placeholder {
   color: #aaa;
 }
+@layer components {
+	img {
+		@apply w-full h-auto max-w-full align-bottom;
+	}
+	input:disabled,textarea:disabled,select:disabled,
+	input:read-only,textarea:read-only {
+		@apply bg-gray-50;
+	}
+}
 select:invalid {
   color: #aaa;
 }
+// @layer components {
 body {
 	font-family: 'Noto Sans JP', sans-serif;
 }
+// }
 /* iOSのアドレスバーによるacメニューの挙動を修正するための記述 */
 @supports (-webkit-touch-callout: none) {
 	html {

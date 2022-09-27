@@ -37,13 +37,13 @@
 				<textarea id="message" name="message" rows="6" tabindex="1" class="mt-2 w-full px-5 py-2 text-gray-700 bg-gray-100 rounded"></textarea>
 			</div>
 			<div class="flex flex-wrap mt-10">
-				<div class="w-1/5 pr-2 mt-auto">
+				<div class="w-52 pr-5 mt-auto">
 					<a onclick="history.back(); return false;" tabindex="1" class="w-full flex justify-center bg-gradient-to-r from-gray-400 to-gray-500 hover:bg-gradient-to-l hover:from-gray-400 hover:to-gray-500 text-gray-100 p-2 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500">戻る</a>
 				</div>
-				<div class="w-1/3 pr-2 mt-auto">
+				<div class="w-56 pr-2 mt-auto">
 					<button type="submit" name="entry" tabindex="1" class="w-full flex justify-center bg-gradient-to-r from-red-500 to-red-600 hover:bg-gradient-to-l hover:from-red-500 hover:to-red-600 text-gray-100 p-2 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500">登録</button>
 				</div>
-				<div class="w-1/3 mt-auto">
+				<div class="w-56 mt-auto">
 					<button type="submit" name="delete" tabindex="1" form="delete" class="w-full flex justify-center bg-gradient-to-r from-gray-600 to-gray-700 hover:bg-gradient-to-l hover:from-gray-600 hover:to-gray-700 text-gray-100 p-2 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500">削除</a>
 				</div>
 			</div>

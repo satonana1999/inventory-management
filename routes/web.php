@@ -42,11 +42,23 @@ Route::view('/user/entry', '/user/entry') -> name('user_entry');
 //受注管理
 Route::view('/receive', '/receive/index') -> name('receive');
 
+//受注登録／変更
+Route::view('/receive/entry', '/receive/entry') -> name('receive_entry');
+
 //発注管理
 Route::view('/place', '/place/index') -> name('place');
 
+//発注登録／変更
+Route::view('/place/entry', '/place/entry') -> name('place_entry');
+
 //入金管理
 Route::view('/payment', '/payment/index') -> name('payment');
+
+//入金管理 変更登録
+Route::view('/payment/edit', '/payment/edit') -> name('payment_edit');
+
+//入金管理 新規登録
+Route::view('/payment/entry', '/payment/entry') -> name('payment_entry');
 
 //発送管理
 Route::view('/send', '/send/index') -> name('send');

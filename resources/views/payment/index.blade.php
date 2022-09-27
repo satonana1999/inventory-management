@@ -51,7 +51,7 @@
 				<button type="submit" name="search" tabindex="1" class="w-full flex justify-center bg-gradient-to-r from-indigo-500 to-blue-600 hover:bg-gradient-to-l hover:from-blue-500 hover:to-indigo-600 text-gray-100 p-2 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500">検索</button>
 			</div>
 			<div class="w-1/6 mt-auto">
-				<a href="/" tabindex="1" class="w-full flex justify-center bg-gradient-to-r from-green-500 to-green-600 hover:bg-gradient-to-l hover:from-green-500 hover:to-green-600 text-gray-100 p-2 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500">新規登録</a>
+				<a href="{{ route('payment_entry') }}" tabindex="1" class="w-full flex justify-center bg-gradient-to-r from-green-500 to-green-600 hover:bg-gradient-to-l hover:from-green-500 hover:to-green-600 text-gray-100 p-2 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500">新規登録</a>
 			</div>
 		</div>
 	</form>
@@ -76,7 +76,7 @@
 						<td class="border text-center py-3 px-4" colspan="8">表示するデータがありません</td>
 					</tr>
 					<tr>
-						<td class="border text-center py-3 px-4"><a tabindex="1" class="underline underline-offset-4 hover:text-blue-500" href="/">2022/08/01</a></td>
+						<td class="border text-center py-3 px-4"><a tabindex="1" class="underline underline-offset-4 hover:text-blue-500" href="{{ route('payment_edit') }}">2022/08/01</a></td>
 						<td class="border text-left py-3 px-4">ヤマダ電機</td>
 						<td class="border text-center py-3 px-4">未充当</td>
 						<td class="border text-right py-3 px-4">900,000</td>
@@ -86,17 +86,17 @@
 						<td class="border text-center py-3 px-4">山田 タロウ</td>
 					</tr>
 					<tr class="bg-gray-200">
-					<td class="border text-center py-3 px-4"><a tabindex="1" class="underline underline-offset-4 hover:text-blue-500" href="/">2022/08/01</a></td>
-						<td class="border text-left py-3 px-4">ヤマダ電機</td>
-						<td class="border text-center py-3 px-4">充当済</td>
-						<td class="border text-right py-3 px-4">1,300,000</td>
-						<td class="border text-center py-3 px-4">2022/09/10</td>
-						<td class="border text-center py-3 px-4">2022/09/20</td>
-						<td class="border text-center py-3 px-4">カード決済</td>
-						<td class="border text-center py-3 px-4">山田 タロウ</td>
+						<td class="border text-center py-3 px-4"><a tabindex="1" class="underline underline-offset-4 hover:text-blue-500" href="{{ route('payment_edit') }}">2022/08/01</a></td>
+						<td class="border border-gray-100 text-left py-3 px-4">ヤマダ電機</td>
+						<td class="border border-gray-100 text-center py-3 px-4">充当済</td>
+						<td class="border border-gray-100 text-right py-3 px-4">1,300,000</td>
+						<td class="border border-gray-100 text-center py-3 px-4">2022/09/10</td>
+						<td class="border border-gray-100 text-center py-3 px-4">2022/09/20</td>
+						<td class="border border-gray-100 text-center py-3 px-4">カード決済</td>
+						<td class="border border-gray-100 text-center py-3 px-4">山田 タロウ</td>
 					</tr>
 					<tr>
-						<td class="border text-center py-3 px-4"><a tabindex="1" class="underline underline-offset-4 hover:text-blue-500" href="/">2022/08/01</a></td>
+						<td class="border text-center py-3 px-4"><a tabindex="1" class="underline underline-offset-4 hover:text-blue-500" href="{{ route('payment_edit') }}">2022/08/01</a></td>
 						<td class="border text-left py-3 px-4">ヤマダ電機</td>
 						<td class="border text-center py-3 px-4">充当済</td>
 						<td class="border text-right py-3 px-4">1,300,000</td>

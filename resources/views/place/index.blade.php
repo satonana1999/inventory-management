@@ -39,7 +39,7 @@
 		<div class="flex flex-wrap mt-2">
 			<div class="w-3/6 pr-2 flex">
 				<div class="w-1/2 pr-2">
-					<label for="date" class="w-full block ml-3 text-sm font-bold text-gray-700 tracking-wide">受注日</label>
+					<label for="date" class="w-full block ml-3 text-sm font-bold text-gray-700 tracking-wide">発注予定日</label>
 					<input type="date" name="str_date" value="" tabindex="1" id="date" class="w-full content-center text-base px-4 py-2 border-b rounded-2xl border-gray-300 focus:outline-none focus:border-indigo-500">
 				</div>
 				<div class="w-1/12 pr-2 text-center mt-auto mb-2">～</div>
@@ -54,7 +54,7 @@
 				<button type="submit" name="search" tabindex="1" class="w-full flex justify-center bg-gradient-to-r from-indigo-500 to-blue-600 hover:bg-gradient-to-l hover:from-blue-500 hover:to-indigo-600 text-gray-100 p-2 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500">検索</button>
 			</div>
 			<div class="w-1/6 mt-auto">
-				<a href="/" tabindex="1" class="w-full flex justify-center bg-gradient-to-r from-green-500 to-green-600 hover:bg-gradient-to-l hover:from-green-500 hover:to-green-600 text-gray-100 p-2 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500">新規登録</a>
+				<a href="{{ route('place_entry') }}" tabindex="1" class="w-full flex justify-center bg-gradient-to-r from-green-500 to-green-600 hover:bg-gradient-to-l hover:from-green-500 hover:to-green-600 text-gray-100 p-2 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500">新規登録</a>
 			</div>
 		</div>
 	</form>
@@ -80,7 +80,7 @@
 						<td class="border text-center py-3 px-4" colspan="9">表示するデータがありません</td>
 					</tr>
 					<tr>
-						<td class="border text-center py-3 px-4"><a class="underline underline-offset-4 hover:text-blue-500" href="/">2022/08/01</a></td>
+						<td class="border text-center py-3 px-4"><a class="underline underline-offset-4 hover:text-blue-500" href="{{ route('place_entry') }}">2022/08/01</a></td>
 						<td class="border text-center py-3 px-4">未発注</td>
 						<td class="border text-left py-3 px-4">iPhone14 pro</td>
 						<td class="border text-center py-3 px-4">10</td>
@@ -91,18 +91,18 @@
 						<td class="border text-center py-3 px-4">山田 タロウ</td>
 					</tr>
 					<tr class="bg-gray-200">
-						<td class="border border-gray-100 text-center py-3 px-4"><a class="underline underline-offset-4 hover:text-blue-500" href="/">2022/08/01</a></td>
-						<td class="border border border-gray-100 text-center py-3 px-4">発注済</td>
-						<td class="border border border-gray-100 text-left py-3 px-4">iPhone14 Pro Max</td>
-						<td class="border border border-gray-100 text-center py-3 px-4">10</td>
-						<td class="border border border-gray-100 text-left py-3 px-4">Apple Japan合同会社</td>
-						<td class="border border border-gray-100 text-right py-3 px-4">1,300,000</td>
-						<td class="border border border-gray-100 text-center py-3 px-4">2022/08/05</td>
-						<td class="border border border-gray-100 text-center py-3 px-4"></td>
-						<td class="border border border-gray-100 text-center py-3 px-4">山田 タロウ</td>
+						<td class="border border-gray-100 text-center py-3 px-4"><a class="underline underline-offset-4 hover:text-blue-500" href="{{ route('place_entry') }}">2022/08/01</a></td>
+						<td class="border border-gray-100 text-center py-3 px-4">発注済</td>
+						<td class="border border-gray-100 text-left py-3 px-4">iPhone14 Pro Max</td>
+						<td class="border border-gray-100 text-center py-3 px-4">10</td>
+						<td class="border border-gray-100 text-left py-3 px-4">Apple Japan合同会社</td>
+						<td class="border border-gray-100 text-right py-3 px-4">1,300,000</td>
+						<td class="border border-gray-100 text-center py-3 px-4">2022/08/05</td>
+						<td class="border border-gray-100 text-center py-3 px-4"></td>
+						<td class="border border-gray-100 text-center py-3 px-4">山田 タロウ</td>
 					</tr>
 					<tr>
-						<td class="border text-center py-3 px-4"><a class="underline underline-offset-4 hover:text-blue-500" href="/">2022/08/01</a></td>
+						<td class="border text-center py-3 px-4"><a class="underline underline-offset-4 hover:text-blue-500" href="{{ route('place_entry') }}">2022/08/01</a></td>
 						<td class="border text-center py-3 px-4">仕入済</td>
 						<td class="border text-left py-3 px-4">iPhone14 pro</td>
 						<td class="border text-center py-3 px-4">10</td>
