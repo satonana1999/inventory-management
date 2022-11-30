@@ -36,7 +36,7 @@
 			</a>
 		</li>
 		<li class="flex items-center">
-			<a href="{{ route('product') }}" class="w-full text-white opacity-75 hover:opacity-100 py-4 pl-6 l-side_nav">
+			<a href="{{ route('product.index') }}" class="w-full text-white opacity-75 hover:opacity-100 py-4 pl-6 l-side_nav">
 				<i class="fa-solid fa-box mr-3"></i>商品マスタ
 			</a>
 		</li>

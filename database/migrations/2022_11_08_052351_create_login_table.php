@@ -13,9 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('login', function (Blueprint $table) {
-            $table->id('login_ID');
-            $table->integer('password')->comment('ログインパスワード')->nullable(false);
+        //ユーザー管理
+        Schema::create('logins', function (Blueprint $table) {
+            $table->string('user_id')->primary()->comment('ユーザーID')->nullable(false);
+            $table->string('user_name')->comment('氏名')->nullable(false);
+            $table->string('user_tel')->comment('電話番号')->nullable(false);
+            $table->string('user_email',255)->comment('メールアドレス')->nullable(false);
+            $table->string('authority')->comment('権限')->nullable(false);
+            $table->string('user_situation')->comment('状態')->nullable(false);
         });
     }
 
@@ -26,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('login');
+        Schema::dropIfExists('logins');
     }
 };

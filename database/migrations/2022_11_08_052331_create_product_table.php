@@ -13,13 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('product', function (Blueprint $table) {
+        //商品マスタ
+        Schema::create('products', function (Blueprint $table) {
             $table->id('product_code')->comment('商品コード')->nullable(false);
-            $table->string('name',255)->comment('商品名（略）')->nullable(false);
-            $table->string('name',255)->comment('商品名')->nullable(false);
-            $table->int('unit_price')->comment('単価')->nullable(false);
-            $table->int('price')->comment('税込価格')->nullable(false);
-            $table->int('amount')->comment('在庫数')->nullable(false);
+            $table->string('abbreviation_name',255)->comment('商品名（略）')->nullable(false);
+            $table->string('product_name',255)->comment('商品名')->nullable(false);
+            $table->integer('unit_price')->comment('単価')->nullable(false);
+            $table->integer('price')->comment('税込価格')->nullable(false);
+            $table->integer('amount')->comment('在庫数')->nullable(false);
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('product');
+        Schema::dropIfExists('products');
     }
 };

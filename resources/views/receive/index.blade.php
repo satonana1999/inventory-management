@@ -10,11 +10,9 @@
 			<div class="w-1/2 pr-2">
 				<label for="product" class="ml-3 text-sm font-bold text-gray-700 tracking-wide">商品名</label>
 				<select name="product" tabindex="1" id="product" class="w-full content-center text-base px-4 py-2 border-b rounded-2xl border-gray-300 focus:outline-none focus:border-indigo-500">
-					<option value="選択してください">選択してください</option>
-					<option value="iPhone14">iPhone14</option>
-					<option value="iPhone14 plus">iPhone14 plus</option>
-					<option value="iPhone14 pro">iPhone14 pro</option>
-					<option value="iPhone14 pro max">iPhone14 pro max</option>
+					<!-- 商品名プルダウン -->
+						<option value="選択してください">選択してください</option>
+						<option value=""></option>
 				</select>
 			</div>
 			<div class="w-1/2">
@@ -68,8 +66,8 @@
 					<tr>{{-- Memo 表示するデータが存在しない場合 --}}
 						<td class="border text-center py-3 px-4" colspan="7">表示するデータがありません</td>
 					</tr>
-					<tr>
-						<td class="border text-center py-3 px-4"><a class="underline underline-offset-4 hover:text-blue-500" href="{{ route('receive_entry') }}">2022/08/01</a></td>
+					<tr><!--一覧を表示したい -->
+						<td class="border text-center py-3 px-4"><a class="underline underline-offset-4 hover:text-blue-500" href="{{ route('receive_entry') }}"></a></td>
 						<td class="border text-left py-3 px-4">iPhone14 pro</td>
 						<td class="border text-center py-3 px-4">10</td>
 						<td class="border text-left py-3 px-4">ヤマダ電機</td>
@@ -77,7 +75,7 @@
 						<td class="border text-center py-3 px-4">2022/08/10</td>
 						<td class="border text-center py-3 px-4">山田 タロウ</td>
 					</tr>
-					<tr class="bg-gray-200">
+					<tr class="bg-gray-200"><!-- ここだけ色違う -->
 						<td class="border border-gray-100 text-center py-3 px-4"><a class="underline underline-offset-4 hover:text-blue-500" href="{{ route('receive_entry') }}">2022/08/01</a></td>
 						<td class="border border-gray-100 text-left py-3 px-4">iPhone14 Pro Max</td>
 						<td class="border border-gray-100 text-center py-3 px-4">10</td>
